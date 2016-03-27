@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="asset/css/stylsheet.css"/>
+  <link rel="stylesheet" type="text/css" href="asset/css/galerie2.css"/>
+  <link rel="stylesheet" type="text/css" href="asset/css/apropos.css"/>
+  <link rel="stylesheet" type="text/css" href="asset/css/contact.css"/>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:800' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="asset/js/galerie.js"/></script>
+  <script type="text/javascript" src="asset/js/jquery-2.2.2.min.js"/></script>
+
+  <link rel="stylesheet" type="text/css" href="asset/css/bootstrap-3.3.6-dist/css/bootstrap.css"/>
+  <meta http-equiv="Content-Type" content="text/javascript" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+
+  <title> Nouveau CV </title>
+</head>
+
+<body>
+  <script>
+  $(function() {
+    var selectedClass = "";
+    $(".fil-cat").click(function() {
+      selectedClass = $(this).attr("data-rel");
+      $("#portfolio").fadeTo(100, 0.1);
+      $("#portfolio div").not("." + selectedClass).fadeOut().removeClass('scale-anm');
+      setTimeout(function() {
+        $("." + selectedClass).fadeIn().addClass('scale-anm');
+        $("#portfolio").fadeTo(300, 1);
+      }, 300);
+    });
+  });
+  </script>
+
+  <!-- navigateur-->
+  <div class="menu-cate-h1">
+    <ul id="menu-cate">
+
+      <li class="menu"><a href="#"><img class="a" src='asset/css/img/menu.png' width="40px" Home ></a>
+        <ul>
+          <li><a href="#home"><img class="a" src='asset/css/img/maison2.png' width="40px" Home ></a></li>
+          <li><a href="#galerie"><img class="a" src='asset/css/img/plume2.png' width="40px" Galerie ></a></li>
+          <li><a href="#apropos"><img class="b" src="asset/css/img/perso2.png"width="40px" a propos ></a></li>
+          <li><a href="#contact"><img class="c" src="asset/css/img/env2.png"width="40px" contact ></a></li>
+        </ul>
+      </li>
+    </div>
+    <!--fin navigateur-->
+
+
+
+    <!-- home-->
+    <div id="home">
+
+      <div id="nuage"></div>
+      <div id="nuage2"></div>
+
+      <div id="nuagefixer">
+        <div class="panelLeft">
+          <!--nuage fixe-->
+          <img src="asset/css/img/mon logo4 copie.png" alt="" />
+        </div>
+      </div>
+
+    </div>
+    <!-- fin du home-->
+
+
+
+
+    <!-- galerie-->
+    <div id="galerie">
+      <div class="toolbar mb2 mt2">
+        <button class="btn fil-cat" href="" data-rel="all">All</button>
+        <button class="btn fil-cat" data-rel="graphisme">Graphisme</button>
+        <button class="btn fil-cat" data-rel="web">Websites</button>
+        <button class="btn fil-cat" data-rel="communication">Communication</button>
+      </div>
+
+      <div class="fond">
+
+        <div class="presentation"><p>Bonjour à toutes et à tous !<br>
+          Je m'appelle Kevin Tomczak, je suis un passionné de graphisme et de nouvelles technologies,
+          et actuellement à la recherche d'un emploi.<br>
+          Bonne visite !</p></div>
+
+          <div class="container images">
+            <div class="row">
+
+              <div class="col-xs-12 nav">
+
+
+
+                <div style="clear:both;"></div>
+                <div id="portfolio">
+
+                  <!--communication-->
+
+                  <div class="tile scale-anm communication all">
+                    <img src="asset/css/img/communication/affiche-bar-péniche.png" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm communication all">
+                    <img src="asset/css/img/communication/affiche-musée.png" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm communication">
+                    <img src="asset/css/img/communication/Design-espace-hologramme.png" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm communication all">
+                    <img src="asset/css/img/communication/carte-coach-sportif.png" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm communication">
+                    <img src="asset/css/img/communication/pack-déodorant-thermochromique.png" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm communication all">
+                    <img src="asset/css/img/communication/banière-pub.jpg" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm communication">
+                    <img src="asset/css/img/communication/PIZZA FRUIT.jpg" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm communication">
+                    <img src="asset/css/img/communication/stykers-barbeapapa.png" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm communication all">
+                    <img src="asset/css/img/communication/packaging-vétements.png" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm communication">
+                    <img src="asset/css/img/communication/recto-flyer-BOOTCAMP.jpg" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm communication">
+                    <img src="asset/css/img/communication/verso-flyer-BOOTCAMP.jpg" alt="" />
+                  </div>
+
+
+                  <div class="tile scale-anm communication">
+                    <img src="asset/css/img/communication/flyers-sport-recto.jpg" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm communication all">
+                    <img src="asset/css/img/communication/flyers-sport-verso.jpg" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm communication">
+                    <img src="asset/css/img/communication/pack Fenchurch.png" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm communication">
+                    <img src="asset/css/img/communication/logo-péche.jpg" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm communication all">
+                    <img src="asset/css/img/communication/affiche-porte-ouverte.png" alt="" />
+                  </div>
+
+
+                  <div class="tile scale-anm communication all">
+                    <img src="asset/css/img/communication/carte-cosmétique.png" alt="" />
+                  </div>
+
+
+                  <div class="tile scale-anm communication">
+                    <img src="asset/css/img/communication/carte-sculpteur.png" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm communication">
+                    <img src="asset/css/img/communication/styckers.jpg" alt="" />
+                  </div>
+
+
+                  <div class="tile scale-anm communication">
+                    <img src="asset/css/img/communication/flyers citée de la dentelles.jpg" alt="" />
+                  </div>
+                  <!--fin communication-->
+
+                  <!-- graphisme-->
+
+                  <div class="tile scale-anm graphisme">
+                    <img src="asset/css/img/graphisme/carte copie.jpg" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm graphisme">
+                    <img src="asset/css/img/graphisme/coucou.jpg" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm graphisme">
+                    <img src="asset/css/img/graphisme/Crocifisso.jpg" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm graphisme">
+                    <img src="asset/css/img/graphisme/fond.jpg" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm graphisme">
+                    <img src="asset/css/img/graphisme/illustration-arbredevie.jpg" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm graphisme all">
+                    <img src="asset/css/img/graphisme/illustration-crapi.jpg" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm graphisme">
+                    <img src="asset/css/img/graphisme/illustration-nemo.jpg" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm graphisme all">
+                    <img src="asset/css/img/graphisme/illustration-oeil.jpg" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm graphisme all">
+                    <img src="asset/css/img/graphisme/piou.png" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm graphisme">
+                    <img src="asset/css/img/graphisme/illustration-origin.jpg" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm graphisme">
+                    <img src="asset/css/img/graphisme/illustration-piaf.jpg" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm graphisme">
+                    <img src="asset/css/img/graphisme/illustration-Singe-astro.jpg" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm graphisme all">
+                    <img src="asset/css/img/graphisme/illustration-stupeur.jpg" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm graphisme all">
+                    <img src="asset/css/img/graphisme/illustration-totem.jpg" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm graphisme">
+                    <img src="asset/css/img/graphisme/illustrationelephant.jpg" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm graphisme">
+                    <img src="asset/css/img/graphisme/médusé.jpg" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm graphisme">
+                    <img src="asset/css/img/graphisme/Proposition-pack.jpg" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm graphisme">
+                    <img src="asset/css/img/graphisme/Sablier.png" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm graphisme">
+                    <img src="asset/css/img/graphisme/tes.jpg" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm graphisme">
+                    <img src="asset/css/img/graphisme/tete.jpg" alt="" />
+                  </div>
+                  <!--fin graphisme-->
+
+                  <!--web-->
+
+                  <div class="tile scale-anm web all">
+                    <!--  <a href="asset/css/img/site/applicationfoot1.png" data-lightbox="asset/css/img/site/applicationfoot1.png" data-title="My caption">asset/css/img/site/applicationfoot1.png</a>-->
+                    <img src="asset/css/img/site/applicationfoot1.png" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm web">
+                    <img src="asset/css/img/site/applicationfoot2.png" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm web">
+                    <img src="asset/css/img/site/applicationfoot3.png" alt="" />
+                  </div>
+                  <div class="tile scale-anm web all">
+                    <img src="asset/css/img/site/MonPremierSite1.png" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm web">
+                    <img src="asset/css/img/site/MonPremierSite2.png" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm web">
+                    <img src="asset/css/img/site/template1.png" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm web all">
+                    <img src="asset/css/img/site/template2.png" alt="" />
+                  </div>
+
+                  <div class="tile scale-anm web">
+                    <img src="asset/css/img/site/template3.png" alt="" />
+                  </div>
+                  <!--fin web-->
+                </div>
+              </div>
+              <div style="clear:both;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+      <!-- fin du galerie-->
+
+
+
+      <!-- apropos-->
+      <div id="apropos">
+
+        <div class="container-fluid"></div>
+
+
+
+        <div class="container apropos">
+          <h2>A propos</h2>
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-xs-12 contenu">
+
+              <div class="col-lg-6-image col-md-6-image col-xs-6-image">
+                <br>
+                <p></p>  <h2>Compétences :</h2>
+                <img src="asset/css/img/logotuto.png" width="100%"/>
+              </div>
+
+
+              <div class="col-lg-12 texte col-md-12 texte col-xs-12-texte">
+                <h2>Expériences/<br>
+                  Formations :</h2>
+                  <br>
+                  <div class="truc"></div>
+
+                  <h2>2016</h2>
+                  <p> Intégration du centre de formation Popschool à Valenciennes en vue d'une
+                    spécialisation en webdesign/intégration et développement d'application web et mobile
+                    . Stage en tant de webdesigner junior au Mutualab de Lille</p>
+                    <br>
+                    <br>
+                    <h2> 2015 </h2>
+                    <p>Graphiste pour sublimation texile en soustraitance pour Desigual Armand thiery Lacoste</p>
+                    <br>
+                    <br>
+
+                    <h2> 2014 </h2>
+                    <p>Accademia di brera Milano. Licence de Design et nouvelle technologie de la communication.
+                      Système interactif, Design Produit, Nouvelles technologies numériques.</p>
+                      <br>
+                      <br>
+                      <h2>2013</h2><p> BTS design de communication d'espace et volume a l'ESAAT
+                        Communication, Modelisation 3D, Multimédia.</p>
+                        <br>
+                        <br>
+                        <h2>2011</h2>
+
+                        <p>  E.A.A.T. École supérieur des arts appliqués et du textile.
+                          stage en agence de communication et evennementiel.</p>
+                          <br>
+                          <br>
+
+                          <h2>2010</h2>
+                          <p>   E.A.A.T. École supérieur des arts appliqués et du textile.
+                            Communication visuelle, Photgraphie, Expression graphique, Stand, Packaging, PLV, Modelisation 3D, Vitrine, Scénographie.
+                            Permis de conduire Brevet de technicien dessinateur maquettiste.</p>
+
+                            <h2>2009</h2>
+                            <p> Stage en agence de publicite.</p>
+                            <br>
+                            <br>
+                            <h2>2008</h2>
+                            <p>Formation sur les logiciels de PAO .</p>
+                            <br>
+                            <br>
+                            <h2>2007</h2>
+                            <p>Formation dans un laboratoire photographique.</p>
+                            <br>
+                            <br>
+                            <h2>2006</h2>
+                            <p>brevet des collèges.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--fin apropos-->
+
+
+
+
+                  <!-- contact-->
+
+                  <div id="contact">
+                    <div class="container contact">
+                      <div class="row">
+                        <div class="col-lg-12 col-md-12 col-xs-12 contact">
+                          <h2 class="merci">Merci de votre visite</h2>
+                          <h2 class="vous">Vous pouvez me contacter</h2>
+                          <h1 class="ici"></h1>
+                          <h1 class="et"> Et surtout, n'hésitez pas à m'embaucher !</h1>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- fin contact-->
+
+
+
+
+
+
+
+                  <!------------------------------------>
+
+
+
+                  <!--  <div class="container">
+                  <h3>Tomczak Kevin Graphiste Webdesigner</h3>
+                </div>-->
+
+
+              </body>
+              </html>
